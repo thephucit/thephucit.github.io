@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Home on The Phuc IT</title>
+    <link>https://thephucit.github.io/</link>
+    <description>Recent content in Home on The Phuc IT</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 26 Jun 2017 18:27:58 +0100</lastBuildDate>
+    
+	<atom:link href="https://thephucit.github.io/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>About</title>
+      <link>https://thephucit.github.io/about/</link>
+      <pubDate>Thu, 02 May 2019 14:15:06 +0700</pubDate>
+      
+      <guid>https://thephucit.github.io/about/</guid>
+      <description>WHO AM I?  Hi, I am Phuc Nguyen. I&amp;rsquo;m a handsome Software Developer from Viet Nam with over 6 years of experience. I used to be a Taekwondo athlete but due to keep living I have to code for food 😐
+Okay, that&amp;rsquo;s it for me 😏
+ Series of Tun application October CMS plugins
+ TunSecurity - Two layer authentication for October CMS TunRestaurant - Easy to use ordering system for restaurants and bars TunSurvey - Easy to create quick survey on your website  Desktop application</description>
+    </item>
+    
+    <item>
+      <title>Laravel Tips</title>
+      <link>https://thephucit.github.io/posts/laravel-tips/</link>
+      <pubDate>Thu, 02 May 2019 14:15:06 +0700</pubDate>
+      
+      <guid>https://thephucit.github.io/posts/laravel-tips/</guid>
+      <description>Order by Mutator function getFullNameAttribute() { return $this-&amp;gt;attributes[&#39;first_name&#39;] . &#39; &#39; . $this-&amp;gt;attributes[&#39;last_name&#39;]; } $clients = Client::get()-&amp;gt;sortBy(&#39;full_name&#39;); // works!  Default ordering in global scope protected static function boot() { parent::boot(); // Order by name ASC static::addGlobalScope(&#39;order&#39;, function (Builder $builder) { $builder-&amp;gt;orderBy(&#39;name&#39;, &#39;asc&#39;); }); }  truy vấn điều kiện where # where name AND email \App\User::whereNameAndEmail(&#39;phanlyhuynh&#39;,&#39;lyhuynh@gmail.com&#39;)-&amp;gt;first(); # where name OR email \App\User::whereNameOrEmail(&#39;huynh&#39;,&#39;huynh@gmail.com&#39;)-&amp;gt;get();  giá trị default cho relation public function user() { return $this-&amp;gt;belongsTo(&#39;App\User&#39;)-&amp;gt;withDefault(function ($user) { $user-&amp;gt;name = &#39;Guest Author&#39;; }); }  cache dữ liệu $value = Cache::remember(&#39;users&#39;, $minutes, function () { return DB::table(&#39;users&#39;)-&amp;gt;get(); }); $value = Cache::rememberForever(&#39;users&#39;, function () { return DB::table(&#39;users&#39;)-&amp;gt;get(); });  Sử dụng fresh() để truy vấn database và lấy phiên bản mới của item hiện tại $user = \App\User::first(); $user-&amp;gt;name = &amp;quot;Something new&amp;quot;; $user = $user-&amp;gt;fresh(); // chú ý rằng nó sẽ trả về giá trị mới, nó không ảnh hưởng tới model hiện tại dump($user-&amp;gt;name); // nó sẽ trả về tên gốc, gốc phải &amp;quot;Something newm&amp;quot;  muốn rehydrate model đã tồn tại, chúng ta sử dụng refresh() $flight = App\Flight::where(&#39;number&#39;, &#39;FR 999&#39;)-&amp;gt;first(); $flight-&amp;gt;number = &#39;FR 111&#39;; $flight-&amp;gt;refresh(); $flight-&amp;gt;number; // &amp;quot;FR 999&amp;quot;  chuyển hướng 301 Route::redirect(&#39;/here&#39;, &#39;/there&#39;, 301);  truy vấn vào model và lấy cả relation của nó $postComments = Post::with(&#39;comments)-&amp;gt;get(); $postComments = Post::with(&#39;comments&#39;)-&amp;gt;has(&#39;comments&#39;)-&amp;gt;get();  Increments and Decrements thuộc tính của model $article = Article::find($article_id); $article-&amp;gt;read_count++; $article-&amp;gt;save(); #OR $article = Article::find($article_id); $article-&amp;gt;increment(&#39;read_count&#39;); #OR Article::find($article_id)-&amp;gt;increment(&#39;read_count&#39;); Article::find($article_id)-&amp;gt;increment(&#39;read_count&#39;, 10); // +10 Product::find($produce_id)-&amp;gt;decrement(&#39;stock&#39;); // -1  truy vấn với điều kiện ngày tháng năm User::whereDate(&#39;created_at&#39;, date(&#39;Y-m-d&#39;)); User::whereDay(&#39;created_at&#39;, date(&#39;d&#39;)); User::whereMonth(&#39;created_at&#39;, date(&#39;m&#39;)); User::whereYear(&#39;created_at&#39;, date(&#39;Y&#39;));  Order by relationship # first public function latestPost() { return $this-&amp;gt;hasOne(\App\Post::class)-&amp;gt;latest(); } #seconds $users = Topic::with(&#39;latestPost&#39;)-&amp;gt;get()-&amp;gt;sortByDesc(&#39;latestPost.</description>
+    </item>
+    
+    <item>
+      <title>Cupper Shortcodes</title>
+      <link>https://thephucit.github.io/posts/cupper-shortcodes/</link>
+      <pubDate>Tue, 12 Feb 2019 23:39:06 -0600</pubDate>
+      
+      <guid>https://thephucit.github.io/posts/cupper-shortcodes/</guid>
+      <description>blockquote {{% blockquote author=&amp;quot;Carl Jung&amp;quot; %}} Even a happy life cannot be without a measure of darkness, and the word happy would lose its meaning if it were not balanced by sadness. It is far better to take things as they come along with patience and equanimity. {{% /blockquote %}}   Even a happy life cannot be without a measure of darkness, and the word happy would lose its meaning if it were not balanced by sadness.</description>
+    </item>
+    
+  </channel>
+</rss>
