@@ -1,0 +1,21 @@
+{{ define "main" }}
+<main>
+    <article>
+        <header>
+            <h1>{{.Title}}</h1>
+        </header>
+        {{.Content}}
+    </article>
+
+    {{ range .Pages.GroupByPublishDate "2006-01" }}
+    <h3>{{ .Key }}</h3>
+    <ul>
+        {{ range .Pages }}
+        <li>
+            <a href="{{ .Permalink }}">{{ .Title }} </a> - <small>{{ .PublishDate.Format "Mon, Jan 2, 2006" }}</small>
+        </li>
+        {{ end }}
+    </ul>
+    {{ end }}
+</main>
+{{ end }}
