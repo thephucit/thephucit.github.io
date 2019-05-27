@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://thephucit.github.io/"/>
-  <updated>2019-05-25T13:46:16.765Z</updated>
+  <updated>2019-05-27T03:40:25.463Z</updated>
   <id>https://thephucit.github.io/</id>
   
   <author>
@@ -17,11 +17,39 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Trải nghiệm thú vị ngày cuối tuần</title>
+    <link href="https://thephucit.github.io/2019/05/27/trai-nghiem-thu-vi-ngay-cuoi-tuan/"/>
+    <id>https://thephucit.github.io/2019/05/27/trai-nghiem-thu-vi-ngay-cuoi-tuan/</id>
+    <published>2019-05-27T01:52:02.000Z</published>
+    <updated>2019-05-27T03:40:25.463Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;Chủ nhật, ngày 26 tháng 5, 2019.&lt;br&gt;Cũng lâu lắm rồi từ cái thời sinh viên đến giờ mới lại có dịp đi phượt bằng xe máy,&lt;br&gt;tuy không đi
+        
+      
+    
+    </summary>
+    
+      <category term="Cuộc sống" scheme="https://thephucit.github.io/categories/Cuoc-song/"/>
+    
+    
+      <category term="trip" scheme="https://thephucit.github.io/tags/trip/"/>
+    
+      <category term="lifestyle" scheme="https://thephucit.github.io/tags/lifestyle/"/>
+    
+  </entry>
+  
+  <entry>
     <title>UX/UI yếu tố quyết định sự thành bại của một sản phẩm</title>
     <link href="https://thephucit.github.io/2019/05/03/ux-ui-yeu-to-quyet-dinh-su-thanh-bai-cua-mot-san-pham/"/>
     <id>https://thephucit.github.io/2019/05/03/ux-ui-yeu-to-quyet-dinh-su-thanh-bai-cua-mot-san-pham/</id>
     <published>2019-05-02T21:17:44.000Z</published>
-    <updated>2019-05-25T13:46:16.765Z</updated>
+    <updated>2019-05-27T01:58:45.010Z</updated>
     
     <summary type="html">
     
@@ -34,6 +62,8 @@
       
     
     </summary>
+    
+      <category term="Thiết kế" scheme="https://thephucit.github.io/categories/Thiet-ke/"/>
     
     
       <category term="UX/UI" scheme="https://thephucit.github.io/tags/UX-UI/"/>
