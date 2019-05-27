@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html>
+<head><meta name="generator" content="Hexo 3.8.0">
+    <meta charset="utf-8">
+
+    
+
+    
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="mobile-web-app-capable" content="yes">
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+
+    <title>Laravel Tips | Tunblo - Inspire and empower.</title>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+        <meta name="keywords" content="php,laravel">
+    
+    <meta name="description" content="Tổng hợp các tips hữu ích để viết query ngắn gọn và tối ưu trong laravel Order by Mutator12345function getFullNameAttribute() &amp;#123;    return $this-&amp;gt;attributes[&apos;first_name&apos;] . &apos; &apos; . $this-&amp;gt;attr">
+<meta name="keywords" content="php,laravel">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Laravel Tips">
+<meta property="og:url" content="https://thephucit.github.io/2019/05/02/laravel-tips/index.html">
+<meta property="og:site_name" content="Tunblo - Inspire and empower.">
+<meta property="og:description" content="Tổng hợp các tips hữu ích để viết query ngắn gọn và tối ưu trong laravel Order by Mutator12345function getFullNameAttribute() &amp;#123;    return $this-&amp;gt;attributes[&apos;first_name&apos;] . &apos; &apos; . $this-&amp;gt;attr">
+<meta property="og:locale" content="vi">
+<meta property="og:image" content="https://thephucit.github.io/images/blogs/laravel-tips.png">
+<meta property="og:updated_time" content="2019-05-26T10:21:38.309Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Laravel Tips">
+<meta name="twitter:description" content="Tổng hợp các tips hữu ích để viết query ngắn gọn và tối ưu trong laravel Order by Mutator12345function getFullNameAttribute() &amp;#123;    return $this-&amp;gt;attributes[&apos;first_name&apos;] . &apos; &apos; . $this-&amp;gt;attr">
+<meta name="twitter:image" content="https://thephucit.github.io/images/blogs/laravel-tips.png">
+    
+
+    
+        <link rel="alternate" href="/atom.xml" title="Tunblo - Inspire and empower." type="application/atom+xml">
+    
+
+    
+        <link rel="icon" href="/images/favicon.png">
+    
+
+    <link rel="stylesheet" href="/libs/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/libs/titillium-web/styles.css">
+    <link rel="stylesheet" href="/libs/source-code-pro/styles.css">
+
+    <link rel="stylesheet" href="/css/style.css">
+
+    <script src="/libs/jquery/3.3.1/jquery.min.js"></script>
+    
+    
+        <link rel="stylesheet" href="/libs/lightgallery/css/lightgallery.min.css">
+    
+    
+        <link rel="stylesheet" href="/libs/justified-gallery/justifiedGallery.min.css">
+    
+    
+        <script type="text/javascript">
+(function(i,s,o,g,r,a,m) {i['GoogleAnalyticsObject']=r;i[r]=i[r]||function() {
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-101036601-1', 'auto');
+ga('send', 'pageview');
+
+</script>
+
+    
+    
+
+
+</head>
+</html>
+<body>
+    <div id="wrap">
+        <header id="header">
+    <div id="header-outer" class="outer">
+        <div class="container">
+            <div class="container-inner">
+                <div id="header-title">
+                    <h1 class="logo-wrap">
+                        <a href="/" class="logo"></a>
+                    </h1>
+                    
+                </div>
+                <div id="header-inner" class="nav-container">
+                    <a id="main-nav-toggle" class="nav-icon fa fa-bars"></a>
+                    <div class="nav-container-inner">
+                        <ul id="main-nav">
+                            
+                                <li class="main-nav-list-item">
+                                    <a class="main-nav-list-link" href="/">Trang chủ</a>
+                                </li>
+                            
+                                        <ul class="main-nav-list"><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/Lap-trinh/">Lập trình</a></li></ul>
+                                    
+                        </ul>
+                        <nav id="sub-nav">
+                            <div id="search-form-wrap">
+
+    <form class="search-form">
+        <input type="text" class="ins-search-input search-form-input" placeholder="Tìm kiếm">
+        <button type="submit" class="search-form-submit"></button>
+    </form>
+    <div class="ins-search">
+    <div class="ins-search-mask"></div>
+    <div class="ins-search-container">
+        <div class="ins-input-wrapper">
+            <input type="text" class="ins-search-input" placeholder="Gõ gì đó...">
+            <span class="ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
+        </div>
+        <div class="ins-section-wrapper">
+            <div class="ins-section-container"></div>
+        </div>
+    </div>
+</div>
+<script>
+(function (window) {
+    var INSIGHT_CONFIG = {
+        TRANSLATION: {
+            POSTS: 'Bài viết',
+            PAGES: 'Trang',
+            CATEGORIES: 'Chuyên mục',
+            TAGS: 'Thẻ',
+            UNTITLED: '(Không đề)',
+        },
+        ROOT_URL: '/',
+        CONTENT_URL: '/content.json',
+    };
+    window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+})(window);
+</script>
+<script src="/js/insight.js"></script>
+
+</div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+        <div class="container">
+            <div class="main-body container-inner">
+                <div class="main-body-inner">
+                    <section id="main">
+                        <div class="main-body-header">
+    <h1 class="header">
+    
+    <a class="page-title-link" href="/categories/Lap-trinh/">Lập trình</a>
+    </h1>
+</div>
+
+                        <div class="main-body-content">
+                            <article id="post-laravel-tips" class="article article-single article-type-post" itemscope itemprop="blogPost">
+    <div class="article-inner">
+        
+            <header class="article-header">
+                
+    
+        <h1 class="article-title" itemprop="name">
+        Laravel Tips
+        </h1>
+    
+
+            </header>
+        
+        
+            <div class="article-meta">
+                
+    <div class="article-date">
+        <a href="/2019/05/02/laravel-tips/" class="article-date">
+            <time datetime="2019-05-02T00:15:06.000Z" itemprop="datePublished">2019-05-02</time>
+        </a>
+    </div>
+
+		
+
+                
+    <div class="article-tag">
+        <i class="fa fa-tag"></i>
+        <a class="tag-link" href="/tags/laravel/">laravel</a>, <a class="tag-link" href="/tags/php/">php</a>
+    </div>
+
+            </div>
+        
+        
+        <div class="article-entry" itemprop="articleBody">
+            <p>Tổng hợp các tips hữu ích để viết query ngắn gọn và tối ưu trong laravel</p>
+<h3 id="Order-by-Mutator"><a href="#Order-by-Mutator" class="headerlink" title="Order by Mutator"></a>Order by Mutator</h3><figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">getFullNameAttribute</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="keyword">$this</span>-&gt;attributes[<span class="string">'first_name'</span>] . <span class="string">' '</span> . <span class="keyword">$this</span>-&gt;attributes[<span class="string">'last_name'</span>];</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">$clients = Client::get()-&gt;sortBy(<span class="string">'full_name'</span>); <span class="comment"># works!</span></span><br></pre></td></tr></table></figure>
+<h3 id="Default-ordering-in-global-scope"><a href="#Default-ordering-in-global-scope" class="headerlink" title="Default ordering in global scope"></a>Default ordering in global scope</h3><figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">protected</span> <span class="keyword">static</span> <span class="function"><span class="keyword">function</span> <span class="title">boot</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">parent</span>::boot();</span><br><span class="line">    <span class="comment">// Order by name ASC</span></span><br><span class="line">    <span class="keyword">static</span>::addGlobalScope(<span class="string">'order'</span>, <span class="function"><span class="keyword">function</span> <span class="params">(Builder $builder)</span> </span>&#123;</span><br><span class="line">        $builder-&gt;orderBy(<span class="string">'name'</span>, <span class="string">'asc'</span>);</span><br><span class="line">    &#125;);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="truy-van-dieu-kien-where"><a href="#truy-van-dieu-kien-where" class="headerlink" title="truy vấn điều kiện where"></a>truy vấn điều kiện where</h3><figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># where name AND email</span></span><br><span class="line">\App\User::whereNameAndEmail(<span class="string">'phanlyhuynh'</span>,<span class="string">'lyhuynh@gmail.com'</span>)-&gt;first();</span><br><span class="line"><span class="comment"># where name OR email</span></span><br><span class="line">\App\User::whereNameOrEmail(<span class="string">'huynh'</span>,<span class="string">'huynh@gmail.com'</span>)-&gt;get();</span><br></pre></td></tr></table></figure>
+<h3 id="gia-tri-default-cho-relation"><a href="#gia-tri-default-cho-relation" class="headerlink" title="giá trị default cho relation"></a>giá trị default cho relation</h3><figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="function"><span class="keyword">function</span> <span class="title">user</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="keyword">$this</span>-&gt;belongsTo(<span class="string">'App\User'</span>)-&gt;withDefault(<span class="function"><span class="keyword">function</span> <span class="params">($user)</span> </span>&#123;</span><br><span class="line">        $user-&gt;name = <span class="string">'Guest Author'</span>;</span><br><span class="line">    &#125;);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="cache-du-lieu"><a href="#cache-du-lieu" class="headerlink" title="cache dữ liệu"></a>cache dữ liệu</h3><figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">$value = Cache::remember(<span class="string">'users'</span>, $minutes, <span class="function"><span class="keyword">function</span> <span class="params">()</span> </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> DB::table(<span class="string">'users'</span>)-&gt;get();</span><br><span class="line">&#125;);</span><br><span class="line">$value = Cache::rememberForever(<span class="string">'users'</span>, <span class="function"><span class="keyword">function</span> <span class="params">()</span> </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> DB::table(<span class="string">'users'</span>)-&gt;get();</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+<h3 id="Su-dung-fresh-de-truy-van-database-va-lay-phien-ban-moi-cua-item-hien-tai"><a href="#Su-dung-fresh-de-truy-van-database-va-lay-phien-ban-moi-cua-item-hien-tai" class="headerlink" title="Sử dụng fresh() để truy vấn database và lấy phiên bản mới của item hiện tại"></a>Sử dụng fresh() để truy vấn database và lấy phiên bản mới của item hiện tại</h3><figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">$user = \App\User::first();</span><br><span class="line">$user-&gt;name = <span class="string">"Something new"</span>;</span><br><span class="line">$user = $user-&gt;fresh(); <span class="comment">// chú ý rằng nó sẽ trả về giá trị mới, nó không ảnh hưởng tới model hiện tại</span></span><br><span class="line">dump($user-&gt;name); <span class="comment">// nó sẽ trả về tên gốc, gốc phải "Something newm"</span></span><br></pre></td></tr></table></figure>
+<h3 id="muon-rehydrate-model-da-ton-tai-chung-ta-su-dung-refresh"><a href="#muon-rehydrate-model-da-ton-tai-chung-ta-su-dung-refresh" class="headerlink" title="muốn rehydrate model đã tồn tại, chúng ta sử dụng refresh()"></a>muốn rehydrate model đã tồn tại, chúng ta sử dụng refresh()</h3><figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">$flight = App\Flight::where(<span class="string">'number'</span>, <span class="string">'FR 999'</span>)-&gt;first();</span><br><span class="line">$flight-&gt;number = <span class="string">'FR 111'</span>;</span><br><span class="line">$flight-&gt;refresh();</span><br><span class="line">$flight-&gt;number; <span class="comment">// "FR 999"</span></span><br></pre></td></tr></table></figure>
+<h3 id="chuyen-huong-301"><a href="#chuyen-huong-301" class="headerlink" title="chuyển hướng 301"></a>chuyển hướng 301</h3><figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Route::redirect(<span class="string">'/here'</span>, <span class="string">'/there'</span>, <span class="number">301</span>);</span><br></pre></td></tr></table></figure>
+<h3 id="truy-van-vao-model-va-lay-ca-relation-cua-no"><a href="#truy-van-vao-model-va-lay-ca-relation-cua-no" class="headerlink" title="truy vấn vào model và lấy cả relation của nó"></a>truy vấn vào model và lấy cả relation của nó</h3><figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$postComments = Post::with(<span class="string">'comments)-&gt;get();</span></span><br><span class="line"><span class="string">$postComments = Post::with('</span>comments<span class="string">')-&gt;has('</span>comments<span class="string">')-&gt;get();</span></span><br></pre></td></tr></table></figure>
+<h3 id="Increments-and-Decrements-thuoc-tinh-cua-model"><a href="#Increments-and-Decrements-thuoc-tinh-cua-model" class="headerlink" title="Increments and Decrements thuộc tính của model"></a>Increments and Decrements thuộc tính của model</h3><figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">$article = Article::find($article_id);</span><br><span class="line">$article-&gt;read_count++;</span><br><span class="line">$article-&gt;save();</span><br><span class="line"></span><br><span class="line"><span class="comment">#OR</span></span><br><span class="line">$article = Article::find($article_id);</span><br><span class="line">$article-&gt;increment(<span class="string">'read_count'</span>);</span><br><span class="line"></span><br><span class="line"><span class="comment">#OR</span></span><br><span class="line">Article::find($article_id)-&gt;increment(<span class="string">'read_count'</span>);</span><br><span class="line">Article::find($article_id)-&gt;increment(<span class="string">'read_count'</span>, <span class="number">10</span>); <span class="comment">// +10</span></span><br><span class="line">Product::find($produce_id)-&gt;decrement(<span class="string">'stock'</span>); <span class="comment">// -1</span></span><br></pre></td></tr></table></figure>
+<h3 id="truy-van-voi-dieu-kien-ngay-thang-nam"><a href="#truy-van-voi-dieu-kien-ngay-thang-nam" class="headerlink" title="truy vấn với điều kiện ngày tháng năm"></a>truy vấn với điều kiện ngày tháng năm</h3><figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">User::whereDate(<span class="string">'created_at'</span>, date(<span class="string">'Y-m-d'</span>));</span><br><span class="line">User::whereDay(<span class="string">'created_at'</span>, date(<span class="string">'d'</span>));</span><br><span class="line">User::whereMonth(<span class="string">'created_at'</span>, date(<span class="string">'m'</span>));</span><br><span class="line">User::whereYear(<span class="string">'created_at'</span>, date(<span class="string">'Y'</span>));</span><br></pre></td></tr></table></figure>
+<h3 id="Order-by-relationship"><a href="#Order-by-relationship" class="headerlink" title="Order by relationship"></a>Order by relationship</h3><figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># first</span></span><br><span class="line"><span class="keyword">public</span> <span class="function"><span class="keyword">function</span> <span class="title">latestPost</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="keyword">$this</span>-&gt;hasOne(\App\Post::class)-&gt;latest();</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">#seconds</span></span><br><span class="line">$users = Topic::with(<span class="string">'latestPost'</span>)-&gt;get()-&gt;sortByDesc(<span class="string">'latestPost.created_at'</span>);</span><br></pre></td></tr></table></figure>
+<h3 id="han-che-su-dung-if-else-trong-truy-van"><a href="#han-che-su-dung-if-else-trong-truy-van" class="headerlink" title="hạn chế sử dụng if else trong truy vấn"></a>hạn chế sử dụng if else trong truy vấn</h3><figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">$query = Author::query();</span><br><span class="line">$query-&gt;when(request(<span class="string">'filter_by'</span>) == <span class="string">'likes'</span>, <span class="function"><span class="keyword">function</span> <span class="params">($q)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> $q-&gt;where(<span class="string">'likes'</span>, <span class="string">'&gt;'</span>, request(<span class="string">'likes_amount'</span>, <span class="number">0</span>));</span><br><span class="line">&#125;);</span><br><span class="line">$query-&gt;when(request(<span class="string">'filter_by'</span>) == <span class="string">'date'</span>, <span class="function"><span class="keyword">function</span> <span class="params">($q)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> $q-&gt;orderBy(<span class="string">'created_at'</span>, request(<span class="string">'ordering_rule'</span>, <span class="string">'desc'</span>));</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+<h3 id="dieu-kien-where-orwhere"><a href="#dieu-kien-where-orwhere" class="headerlink" title="điều kiện where, orwhere"></a>điều kiện where, orwhere</h3><figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">$q-&gt;where(<span class="function"><span class="keyword">function</span> <span class="params">($query)</span> </span>&#123;</span><br><span class="line">    $query-&gt;where(<span class="string">'gender'</span>, <span class="string">'Male'</span>)</span><br><span class="line">        -&gt;where(<span class="string">'age'</span>, <span class="string">'&gt;='</span>, <span class="number">18</span>);</span><br><span class="line">&#125;)-&gt;orWhere(<span class="function"><span class="keyword">function</span><span class="params">($query)</span> </span>&#123;</span><br><span class="line">    $query-&gt;where(<span class="string">'gender'</span>, <span class="string">'Female'</span>)</span><br><span class="line">        -&gt;where(<span class="string">'age'</span>, <span class="string">'&gt;='</span>, <span class="number">65</span>);</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+        </div>
+        <footer class="article-footer">
+            
+
+
+
+    <a data-url="https://thephucit.github.io/2019/05/02/laravel-tips/" data-id="cjw5ppalo0002318dzrxqhl6f" class="article-share-link"><i class="fa fa-share"></i>Chia sẻ</a>
+<script>
+    (function ($) {
+        $('body').on('click', function() {
+            $('.article-share-box.on').removeClass('on');
+        }).on('click', '.article-share-link', function(e) {
+            e.stopPropagation();
+
+            var $this = $(this),
+                url = $this.attr('data-url'),
+                encodedUrl = encodeURIComponent(url),
+                id = 'article-share-box-' + $this.attr('data-id'),
+                offset = $this.offset(),
+                box;
+
+            if ($('#' + id).length) {
+                box = $('#' + id);
+
+                if (box.hasClass('on')){
+                    box.removeClass('on');
+                    return;
+                }
+            } else {
+                var html = [
+                    '<div id="' + id + '" class="article-share-box">',
+                        '<input class="article-share-input" value="' + url + '">',
+                        '<div class="article-share-links">',
+                            '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="article-share-twitter" target="_blank" title="Twitter"></a>',
+                            '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="article-share-facebook" target="_blank" title="Facebook"></a>',
+                            '<a href="http://pinterest.com/pin/create/button/?url=' + encodedUrl + '" class="article-share-pinterest" target="_blank" title="Pinterest"></a>',
+                            '<a href="https://plus.google.com/share?url=' + encodedUrl + '" class="article-share-google" target="_blank" title="Google+"></a>',
+                        '</div>',
+                    '</div>'
+                ].join('');
+
+              box = $(html);
+
+              $('body').append(box);
+            }
+
+            $('.article-share-box.on').hide();
+
+            box.css({
+                top: offset.top + 25,
+                left: offset.left
+            }).addClass('on');
+
+        }).on('click', '.article-share-box', function (e) {
+            e.stopPropagation();
+        }).on('click', '.article-share-box-input', function () {
+            $(this).select();
+        }).on('click', '.article-share-box-link', function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+
+            window.open(this.href, 'article-share-box-window-' + Date.now(), 'width=500,height=450');
+        });
+    })(jQuery);
+</script>
+
+        </footer>
+    </div>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BlogPosting",
+        "author": {
+            "@type": "Person",
+            "name": "Tunblo"
+        },
+        "headline": "Laravel Tips",
+        "image": "https://thephucit.github.io/images/blogs/laravel-tips.png",
+        "keywords": "php laravel",
+        "genre": "Lập trình",
+        "datePublished": "2019-05-02",
+        "dateCreated": "2019-05-02",
+        "dateModified": "2019-05-26",
+        "url": "https://thephucit.github.io/2019/05/02/laravel-tips/",
+        "description": "Tổng hợp các tips hữu ích để viết query ngắn gọn và tối ưu trong laravel
+Order by Mutator12345function getFullNameAttribute() &#123;    return $this-&gt;attributes['first_name'] . ' ' . $this-&gt;attr"
+        "wordCount": 814
+    }
+</script>
+
+</article>
+
+    <section id="comments">
+    
+        
+    <div id="disqus_thread">
+        <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    </div>
+
+    
+    </section>
+
+
+
+                        </div>
+                    </section>
+                    <aside id="sidebar">
+    <a class="sidebar-toggle" title="Expand Sidebar"><i class="toggle icon"></i></a>
+    <div class="sidebar-top">
+        <p>Theo dõi:</p>
+        <ul class="social-links">
+            
+                
+                <li>
+                    <a class="social-tooltip" title="github" href="https://github.com/thephucit/thephucit.github.io" target="_blank" rel="noopener">
+                        <i class="icon fa fa-github"></i>
+                    </a>
+                </li>
+                
+            
+                
+                <li>
+                    <a class="social-tooltip" title="rss" href="/atom.xml" target="_blank" rel="noopener">
+                        <i class="icon fa fa-rss"></i>
+                    </a>
+                </li>
+                
+            
+        </ul>
+    </div>
+    
+        
+<nav id="article-nav">
+    
+        <a href="/2019/05/03/ux-ui-yeu-to-quyet-dinh-su-thanh-bai-cua-mot-san-pham/" id="article-nav-newer" class="article-nav-link-wrap">
+        <strong class="article-nav-caption">Mới hơn</strong>
+        <p class="article-nav-title">
+        
+            UX/UI yếu tố quyết định sự thành bại của một sản phẩm
+        
+        </p>
+        <i class="icon fa fa-chevron-right" id="icon-chevron-right"></i>
+    </a>
+    
+    
+</nav>
+
+    
+    <div class="widgets-container">
+        
+            
+                
+
+            
+                
+    <div class="widget-wrap">
+        <h3 class="widget-title">Bài viết mới</h3>
+        <div class="widget">
+            <ul id="recent-post" class>
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2019/05/03/ux-ui-yeu-to-quyet-dinh-su-thanh-bai-cua-mot-san-pham/" class="thumbnail">
+    
+    
+        <span style="background-image:url(/images/blogs/ux-ui-logo.svg)" alt="UX/UI yếu tố quyết định sự thành bại của một sản phẩm" class="thumbnail-image"></span>
+    
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"></p>
+                            <p class="item-title"><a href="/2019/05/03/ux-ui-yeu-to-quyet-dinh-su-thanh-bai-cua-mot-san-pham/" class="title">UX/UI yếu tố quyết định sự thành bại của một sản phẩm</a></p>
+                            <p class="item-date"><time datetime="2019-05-02T21:17:44.000Z" itemprop="datePublished">2019-05-03</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2019/05/02/laravel-tips/" class="thumbnail">
+    
+    
+        <span style="background-image:url(/images/blogs/laravel-tips.png)" alt="Laravel Tips" class="thumbnail-image"></span>
+    
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/Lap-trinh/">Lập trình</a></p>
+                            <p class="item-title"><a href="/2019/05/02/laravel-tips/" class="title">Laravel Tips</a></p>
+                            <p class="item-date"><time datetime="2019-05-02T00:15:06.000Z" itemprop="datePublished">2019-05-02</time></p>
+                        </div>
+                    </li>
+                
+            </ul>
+        </div>
+    </div>
+
+            
+                
+    <div class="widget-wrap widget-list">
+        <h3 class="widget-title">Chuyên mục</h3>
+        <div class="widget">
+            <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Lap-trinh/">Lập trình</a><span class="category-list-count">1</span></li></ul>
+        </div>
+    </div>
+
+
+            
+                
+    <div class="widget-wrap widget-list">
+        <h3 class="widget-title">Lưu trữ</h3>
+        <div class="widget">
+            <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/05/">tháng 5 2019</a><span class="archive-list-count">2</span></li></ul>
+        </div>
+    </div>
+
+
+            
+                
+    <div class="widget-wrap widget-list">
+        <h3 class="widget-title">Thẻ</h3>
+        <div class="widget">
+            <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/UX-UI/">UX/UI</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/design/">design</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/laravel/">laravel</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/php/">php</a><span class="tag-list-count">1</span></li></ul>
+        </div>
+    </div>
+
+
+            
+                
+    <div class="widget-wrap widget-float">
+        <h3 class="widget-title">Mây thẻ</h3>
+        <div class="widget tagcloud">
+            <a href="/tags/UX-UI/" style="font-size: 10px;">UX/UI</a> <a href="/tags/design/" style="font-size: 10px;">design</a> <a href="/tags/laravel/" style="font-size: 10px;">laravel</a> <a href="/tags/php/" style="font-size: 10px;">php</a>
+        </div>
+    </div>
+
+
+            
+                
+    <div class="widget-wrap widget-list">
+        <h3 class="widget-title">Liên kết</h3>
+        <div class="widget">
+            <ul>
+                
+                    <li>
+                        <a href="https://tunlookup.com/">Tunlookup</a>
+                    </li>
+                
+            </ul>
+        </div>
+    </div>
+
+
+            
+        
+    </div>
+</aside>
+
+                </div>
+            </div>
+        </div>
+        <footer id="footer">
+    <div class="container">
+        <div class="container-inner">
+            <a id="back-to-top" href="javascript:;"><i class="icon fa fa-angle-up"></i></a>
+            <div class="credit">
+                <h1 class="logo-wrap">
+                    <a href="/" class="logo"></a>
+                </h1>
+                <p>&copy; 2019 Tunblo</p>
+            </div>
+            <div class="footer-plugins">
+              
+    
+
+
+            </div>
+        </div>
+    </div>
+</footer>
+
+        
+    
+    <script>
+    var disqus_shortname = 'https-thephucit-github-io';
+    
+    
+    var disqus_url = 'https://thephucit.github.io/2019/05/02/laravel-tips/';
+    
+    (function() {
+    var dsq = document.createElement('script');
+    dsq.type = 'text/javascript';
+    dsq.async = true;
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+    </script>
+
+
+
+
+    
+        <script src="/libs/lightgallery/js/lightgallery.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-thumbnail.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-pager.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-autoplay.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-fullscreen.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-zoom.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-hash.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-share.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-video.min.js"></script>
+    
+    
+        <script src="/libs/justified-gallery/jquery.justifiedGallery.min.js"></script>
+    
+    
+
+
+
+<!-- Custom Scripts -->
+<script src="/js/main.js"></script>
+
+    </div>
+</body>
+</html>
