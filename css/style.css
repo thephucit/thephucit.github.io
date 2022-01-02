@@ -852,22 +852,17 @@ code {
   -moz-background-size: 100% 100%;
   background-size: 100% 100%;
 }
-#recent-post li .item-inner a,
 #recent-post li .item-inner .item-category {
   font-size: 13px;
   text-transform: uppercase;
 }
-#recent-post li .item-inner a a,
 #recent-post li .item-inner .item-category a {
   color: #0984e3;
 }
-#recent-post li .item-inner a a:hover,
 #recent-post li .item-inner .item-category a:hover {
   color: #444;
 }
-#recent-post li .item-inner a a,
 #recent-post li .item-inner .item-category a,
-#recent-post li .item-inner a .icon,
 #recent-post li .item-inner .item-category .icon {
   margin-right: 5px;
 }
