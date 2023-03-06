@@ -1,81 +1,43 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-    
-    <url>
-        <loc>https://thephucit.github.io/about.html</loc>
-        
-        <lastmod>2022-01-02T00:29:05.758Z</lastmod>
-        
-    </url>
-    
-    <url>
-        <loc>https://thephucit.github.io/2020/06/01/cac-mo-hinh-gia/</loc>
-        
-        <lastmod>2022-01-02T00:25:58.753Z</lastmod>
-        
-    </url>
-    
-    <url>
-        <loc>https://thephucit.github.io/2020/06/01/cac-yeu-to-anh-huong-den-chi-so-forex/</loc>
-        
-        <lastmod>2022-01-02T00:25:58.753Z</lastmod>
-        
-    </url>
-    
-    <url>
-        <loc>https://thephucit.github.io/2020/06/01/chi-bao-bollinger-bands/</loc>
-        
-        <lastmod>2022-01-02T00:25:58.753Z</lastmod>
-        
-    </url>
-    
-    <url>
-        <loc>https://thephucit.github.io/2020/06/01/chi-bao-ema/</loc>
-        
-        <lastmod>2022-01-02T00:25:58.753Z</lastmod>
-        
-    </url>
-    
-    <url>
-        <loc>https://thephucit.github.io/2020/06/01/chi-bao-macd/</loc>
-        
-        <lastmod>2022-01-02T00:25:58.753Z</lastmod>
-        
-    </url>
-    
-    <url>
-        <loc>https://thephucit.github.io/2020/06/01/chi-bao-rsi/</loc>
-        
-        <lastmod>2022-01-02T00:25:58.753Z</lastmod>
-        
-    </url>
-    
-    <url>
-        <loc>https://thephucit.github.io/2020/06/01/khung-thoi-gian-giao-dich-forex/</loc>
-        
-        <lastmod>2022-01-02T00:25:58.753Z</lastmod>
-        
-    </url>
-    
-    <url>
-        <loc>https://thephucit.github.io/2020/06/01/chi-bao-stochastic/</loc>
-        
-        <lastmod>2022-01-02T00:25:58.753Z</lastmod>
-        
-    </url>
-    
-    <url>
-        <loc>https://thephucit.github.io/2019/05/27/trai-nghiem-thu-vi-ngay-cuoi-tuan/</loc>
-        
-        <lastmod>2022-01-02T00:25:58.753Z</lastmod>
-        
-    </url>
-    
-    <url>
-        <loc>https://thephucit.github.io/2019/06/03/vinh-biet-chrome-brave-se-la-su-lua-chon-tiep-theo-cua-toi/</loc>
-        
-        <lastmod>2022-01-02T00:25:58.753Z</lastmod>
-        
-    </url>
-    
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://thephucit.github.io/posts/cach-minh-chien-thang-thi-truong-ngoai-hoi/</loc>
+    <lastmod>2020-03-05T19:46:04+07:00</lastmod>
+  </url><url>
+    <loc>https://thephucit.github.io/tags/forex/</loc>
+    <lastmod>2020-03-05T19:46:04+07:00</lastmod>
+  </url><url>
+    <loc>https://thephucit.github.io/series/forex/</loc>
+    <lastmod>2020-03-05T19:46:04+07:00</lastmod>
+  </url><url>
+    <loc>https://thephucit.github.io/</loc>
+    <lastmod>2020-03-05T19:46:04+07:00</lastmod>
+  </url><url>
+    <loc>https://thephucit.github.io/posts/</loc>
+    <lastmod>2020-03-05T19:46:04+07:00</lastmod>
+  </url><url>
+    <loc>https://thephucit.github.io/series/</loc>
+    <lastmod>2020-03-05T19:46:04+07:00</lastmod>
+  </url><url>
+    <loc>https://thephucit.github.io/tags/</loc>
+    <lastmod>2020-03-05T19:46:04+07:00</lastmod>
+  </url><url>
+    <loc>https://thephucit.github.io/tags/t%C3%A0i-ch%C3%ADnh/</loc>
+    <lastmod>2020-03-05T19:46:04+07:00</lastmod>
+  </url><url>
+    <loc>https://thephucit.github.io/posts/cac-yeu-to-anh-huong-den-chi-so-forex/</loc>
+    <lastmod>2020-03-01T09:46:04+07:00</lastmod>
+  </url><url>
+    <loc>https://thephucit.github.io/tags/chuy%E1%BA%BFn-%C4%91i/</loc>
+    <lastmod>2019-05-27T18:50:44+07:00</lastmod>
+  </url><url>
+    <loc>https://thephucit.github.io/tags/du-l%E1%BB%8Bch/</loc>
+    <lastmod>2019-05-27T18:50:44+07:00</lastmod>
+  </url><url>
+    <loc>https://thephucit.github.io/posts/trai-nghiem-thu-vi-ngay-cuoi-tuan/</loc>
+    <lastmod>2019-05-27T18:50:44+07:00</lastmod>
+  </url><url>
+    <loc>https://thephucit.github.io/archives/</loc>
+  </url>
 </urlset>
