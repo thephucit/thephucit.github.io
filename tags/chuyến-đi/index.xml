@@ -1,10 +1,18 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Chuyến đi on Peter&#39;s Blog</title>
-    <link>https://thephucit.github.io/tags/chuy%E1%BA%BFn-%C4%91i/</link>
-    <description>Recent content in Chuyến đi on Peter&#39;s Blog</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 27 May 2019 18:50:44 +0700</lastBuildDate><atom:link href="https://thephucit.github.io/tags/chuy%E1%BA%BFn-%C4%91i/index.xml" rel="self" type="application/rss+xml" />
-  </channel>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Chuyến đi - Tag - Peter&#39;s Blog</title>
+        <link>https://thephucit.github.io/tags/chuy%E1%BA%BFn-%C4%91i/</link>
+        <description>Chuyến đi - Tag - Peter&#39;s Blog</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>thephuc1601@gmail.com (Phuc Nguyen)</managingEditor>
+            <webMaster>thephuc1601@gmail.com (Phuc Nguyen)</webMaster><lastBuildDate>Mon, 27 May 2019 18:50:44 &#43;0700</lastBuildDate><atom:link href="https://thephucit.github.io/tags/chuy%E1%BA%BFn-%C4%91i/" rel="self" type="application/rss+xml" /><item>
+    <title>Trải nghiệm thú vị ngày cuối tuần</title>
+    <link>https://thephucit.github.io/trai-nghiem-thu-vi-ngay-cuoi-tuan/</link>
+    <pubDate>Mon, 27 May 2019 18:50:44 &#43;0700</pubDate>
+    <author>Phuc Nguyen</author>
+    <guid>https://thephucit.github.io/trai-nghiem-thu-vi-ngay-cuoi-tuan/</guid>
+    <description><![CDATA[<p><strong>Chủ nhật, ngày 26 tháng 5, 2019.</strong></p>
+<p>Cũng lâu lắm rồi từ cái thời sinh viên đến giờ mới lại có dịp đi phượt bằng xe máy,
+tuy không đi xa như cái thời còn son trẻ ấy nhưng cũng đủ để cặp mông mỏi nhừ.</p>]]></description>
+</item>
+</channel>
 </rss>

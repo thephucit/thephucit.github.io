@@ -1,10 +1,25 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Forex on Peter&#39;s Blog</title>
-    <link>https://thephucit.github.io/tags/forex/</link>
-    <description>Recent content in Forex on Peter&#39;s Blog</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Thu, 05 Mar 2020 19:46:04 +0700</lastBuildDate><atom:link href="https://thephucit.github.io/tags/forex/index.xml" rel="self" type="application/rss+xml" />
-  </channel>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Forex - Tag - Peter&#39;s Blog</title>
+        <link>https://thephucit.github.io/tags/forex/</link>
+        <description>Forex - Tag - Peter&#39;s Blog</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>thephuc1601@gmail.com (Phuc Nguyen)</managingEditor>
+            <webMaster>thephuc1601@gmail.com (Phuc Nguyen)</webMaster><lastBuildDate>Thu, 05 Mar 2020 19:46:04 &#43;0700</lastBuildDate><atom:link href="https://thephucit.github.io/tags/forex/" rel="self" type="application/rss+xml" /><item>
+    <title>Cách mình chiến thắng thị trường ngoại hối</title>
+    <link>https://thephucit.github.io/cach-minh-chien-thang-thi-truong-ngoai-hoi/</link>
+    <pubDate>Thu, 05 Mar 2020 19:46:04 &#43;0700</pubDate>
+    <author>Phuc Nguyen</author>
+    <guid>https://thephucit.github.io/cach-minh-chien-thang-thi-truong-ngoai-hoi/</guid>
+    <description><![CDATA[<p>Ngày đầu tiên đổ tiền vào thị trường ngoại hối, không kinh nghiệm, không kiến thức, không biết thế nào là quản trị vốn, không có khái niệm phân tích cơ bản hay phân tích kỹ thuật chỉ biết chọn đánh lên đánh xuống được ăn cả ngả về không.
+Với số vốn 1000$ khoảng hơn 23 triệu VNĐ mình đã bắt đầu tham gia thị trường ngoại hối với cái đầu rỗng tuếch.</p>]]></description>
+</item>
+<item>
+    <title>Các yếu tố ảnh hưởng đến chỉ số forex</title>
+    <link>https://thephucit.github.io/cac-yeu-to-anh-huong-den-chi-so-forex/</link>
+    <pubDate>Sun, 01 Mar 2020 09:46:04 &#43;0700</pubDate>
+    <author>Phuc Nguyen</author>
+    <guid>https://thephucit.github.io/cac-yeu-to-anh-huong-den-chi-so-forex/</guid>
+    <description><![CDATA[<p>Đúc rút từ kinh nghiệm nhiều năm giao dịch thì trường ngoại hối, dưới đây là một số yếu tố quan trọng mà mình biết chúng có thể gây ảnh hưởng đến chỉ số ngoại hối.</p>]]></description>
+</item>
+</channel>
 </rss>

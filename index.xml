@@ -1,10 +1,37 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Peter&#39;s Blog</title>
-    <link>https://thephucit.github.io/</link>
-    <description>Recent content on Peter&#39;s Blog</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Thu, 05 Mar 2020 19:46:04 +0700</lastBuildDate><atom:link href="https://thephucit.github.io/index.xml" rel="self" type="application/rss+xml" />
-  </channel>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Peter&#39;s Blog</title>
+        <link>https://thephucit.github.io/</link>
+        <description>Inspire and empower</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>thephuc1601@gmail.com (Phuc Nguyen)</managingEditor>
+            <webMaster>thephuc1601@gmail.com (Phuc Nguyen)</webMaster><lastBuildDate>Thu, 05 Mar 2020 19:46:04 &#43;0700</lastBuildDate>
+            <atom:link href="https://thephucit.github.io/index.xml" rel="self" type="application/rss+xml" />
+        <item>
+    <title>Cách mình chiến thắng thị trường ngoại hối</title>
+    <link>https://thephucit.github.io/cach-minh-chien-thang-thi-truong-ngoai-hoi/</link>
+    <pubDate>Thu, 05 Mar 2020 19:46:04 &#43;0700</pubDate>
+    <author>Phuc Nguyen</author>
+    <guid>https://thephucit.github.io/cach-minh-chien-thang-thi-truong-ngoai-hoi/</guid>
+    <description><![CDATA[<p>Ngày đầu tiên đổ tiền vào thị trường ngoại hối, không kinh nghiệm, không kiến thức, không biết thế nào là quản trị vốn, không có khái niệm phân tích cơ bản hay phân tích kỹ thuật chỉ biết chọn đánh lên đánh xuống được ăn cả ngả về không.
+Với số vốn 1000$ khoảng hơn 23 triệu VNĐ mình đã bắt đầu tham gia thị trường ngoại hối với cái đầu rỗng tuếch.</p>]]></description>
+</item>
+<item>
+    <title>Các yếu tố ảnh hưởng đến chỉ số forex</title>
+    <link>https://thephucit.github.io/cac-yeu-to-anh-huong-den-chi-so-forex/</link>
+    <pubDate>Sun, 01 Mar 2020 09:46:04 &#43;0700</pubDate>
+    <author>Phuc Nguyen</author>
+    <guid>https://thephucit.github.io/cac-yeu-to-anh-huong-den-chi-so-forex/</guid>
+    <description><![CDATA[<p>Đúc rút từ kinh nghiệm nhiều năm giao dịch thì trường ngoại hối, dưới đây là một số yếu tố quan trọng mà mình biết chúng có thể gây ảnh hưởng đến chỉ số ngoại hối.</p>]]></description>
+</item>
+<item>
+    <title>Trải nghiệm thú vị ngày cuối tuần</title>
+    <link>https://thephucit.github.io/trai-nghiem-thu-vi-ngay-cuoi-tuan/</link>
+    <pubDate>Mon, 27 May 2019 18:50:44 &#43;0700</pubDate>
+    <author>Phuc Nguyen</author>
+    <guid>https://thephucit.github.io/trai-nghiem-thu-vi-ngay-cuoi-tuan/</guid>
+    <description><![CDATA[<p><strong>Chủ nhật, ngày 26 tháng 5, 2019.</strong></p>
+<p>Cũng lâu lắm rồi từ cái thời sinh viên đến giờ mới lại có dịp đi phượt bằng xe máy,
+tuy không đi xa như cái thời còn son trẻ ấy nhưng cũng đủ để cặp mông mỏi nhừ.</p>]]></description>
+</item>
+</channel>
 </rss>
