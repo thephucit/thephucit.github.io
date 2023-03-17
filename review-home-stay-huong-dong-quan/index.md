@@ -22,9 +22,9 @@ Giữa trời nắng chang chang nhưng không oi bức, gió thì phảng phấ
 
 
 Toàn bộ khuôn viên được trải thảm cỏ xanh, tạo cảm giác rất mát mắt
-![](/images/post-04-03-2023/IMG_0149.JPG "Khuông viên")
+![](/images/post-04-03-2023/IMG_0149.JPG "Khuôn viên")
 
-![](/images/post-04-03-2023/IMG_0137.JPG "Khuông viên")
+![](/images/post-04-03-2023/IMG_0137.JPG "Khuôn viên")
 
 Vào quán cũng tầm giữa trưa, tụi mình gọi đâu đó hơn chục món. Do lượng khách cũng khá đông nên thời gian lên món cũng chậm chứ không cũng phải ăn thêm mấy món nữa.
 Đến lúc no nê mới nhớ quên chụp hình lại các món ăn, thôi tranh thủ làm píc với cô bạn cùng phòng rồi đi về :rofl:
