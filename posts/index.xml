@@ -13,6 +13,16 @@
     <description><![CDATA[<p>Có thể nói đây là chuyến du xuân đầu tiên kể từ cái tết tẻ nhạt của năm 2023, hôm nay mới có dịp được bạn bè rủ rê gặp mặt ăn uống, tán gẫu.</p>]]></description>
 </item>
 <item>
+    <title>Tìm hiểu về Learn to Rank Elasticsearch</title>
+    <link>https://thephucit.github.io/tim-hieu-ve-learn-to-rank-elasticsearch/</link>
+    <pubDate>Wed, 04 Jan 2023 16:17:30 &#43;0700</pubDate>
+    <author>Phuc Nguyen</author>
+    <guid>https://thephucit.github.io/tim-hieu-ve-learn-to-rank-elasticsearch/</guid>
+    <description><![CDATA[<p>Học cách xếp hạng (LTR) là sự kết hợp của các kỹ thuật được giám sát và bán giám sát để dự đoán mức độ liên quan của sản phẩm.
+Dưới đây là các bước để triển khai một mô hình LTR Elasticsearch nhằm nâng cao mức độ liên quan trong bài toán tìm kiếm cho cửa hàng thương mại điện tử.
+Có một vài thuật ngữ mà mình sẽ giữ nó ở tiếng anh, vì dịch ra tiếng Việt nó khá kỳ cục và vô nghĩa :D</p>]]></description>
+</item>
+<item>
     <title>Kinh nghiệm làm việc từ xa</title>
     <link>https://thephucit.github.io/kinh-nghiem-lam-viec-tu-xa/</link>
     <pubDate>Sun, 10 Apr 2022 15:26:49 &#43;0700</pubDate>

@@ -1,0 +1,18 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Elasticsearch - Tag - Peter&#39;s Blog</title>
+        <link>https://thephucit.github.io/tags/elasticsearch/</link>
+        <description>Elasticsearch - Tag - Peter&#39;s Blog</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>thephuc1601@gmail.com (Phuc Nguyen)</managingEditor>
+            <webMaster>thephuc1601@gmail.com (Phuc Nguyen)</webMaster><lastBuildDate>Wed, 04 Jan 2023 16:17:30 &#43;0700</lastBuildDate><atom:link href="https://thephucit.github.io/tags/elasticsearch/" rel="self" type="application/rss+xml" /><item>
+    <title>Tìm hiểu về Learn to Rank Elasticsearch</title>
+    <link>https://thephucit.github.io/tim-hieu-ve-learn-to-rank-elasticsearch/</link>
+    <pubDate>Wed, 04 Jan 2023 16:17:30 &#43;0700</pubDate>
+    <author>Phuc Nguyen</author>
+    <guid>https://thephucit.github.io/tim-hieu-ve-learn-to-rank-elasticsearch/</guid>
+    <description><![CDATA[<p>Học cách xếp hạng (LTR) là sự kết hợp của các kỹ thuật được giám sát và bán giám sát để dự đoán mức độ liên quan của sản phẩm.
+Dưới đây là các bước để triển khai một mô hình LTR Elasticsearch nhằm nâng cao mức độ liên quan trong bài toán tìm kiếm cho cửa hàng thương mại điện tử.
+Có một vài thuật ngữ mà mình sẽ giữ nó ở tiếng anh, vì dịch ra tiếng Việt nó khá kỳ cục và vô nghĩa :D</p>]]></description>
+</item>
+</channel>
+</rss>
